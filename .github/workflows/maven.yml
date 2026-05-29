@@ -19,9 +19,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # This forces the runner to use Node 24 for all steps
+    # This forces the runner to use older Node for all steps
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
 
     steps:
     - uses: actions/checkout@v4
