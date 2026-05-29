@@ -14,6 +14,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# Grant the required permissions for the dependency submission step
+permissions:
+  contents: write
+
 jobs:
   build:
 
